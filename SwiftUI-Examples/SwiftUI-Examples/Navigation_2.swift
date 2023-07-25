@@ -7,7 +7,7 @@ struct Navigation_2: View {
     @StateObject private var viewModel = PeopleViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(viewModel.people, id: \.name) { person in
                     NavigationLink(person.name) {

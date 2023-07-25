@@ -7,7 +7,7 @@ struct Navigation_1: View {
     @StateObject private var viewModel = PeopleViewModel()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(viewModel.people, id: \.name) { person in
                 ZStack(alignment: .leading) {
                     HStack {

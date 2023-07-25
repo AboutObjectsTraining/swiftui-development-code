@@ -47,6 +47,9 @@
 		B4C581BC2A702A3700B5AC5D /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581982A702A3700B5AC5D /* Gestures.swift */; };
 		B4C581BD2A702A3700B5AC5D /* StateObject-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581992A702A3700B5AC5D /* StateObject-2.swift */; };
 		B4C581BF2A702F5A00B5AC5D /* PropertyBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581BE2A702F5A00B5AC5D /* PropertyBuilderTests.swift */; };
+		B4C581C12A70535E00B5AC5D /* Navigation_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C02A70535E00B5AC5D /* Navigation_3.swift */; };
+		B4C581C32A706A8800B5AC5D /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C22A706A8800B5AC5D /* PeopleViewModel.swift */; };
+		B4C581C52A706B3500B5AC5D /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C42A706B3500B5AC5D /* DogsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,9 @@
 		B4C581982A702A3700B5AC5D /* Gestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		B4C581992A702A3700B5AC5D /* StateObject-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StateObject-2.swift"; sourceTree = "<group>"; };
 		B4C581BE2A702F5A00B5AC5D /* PropertyBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyBuilderTests.swift; sourceTree = "<group>"; };
+		B4C581C02A70535E00B5AC5D /* Navigation_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation_3.swift; sourceTree = "<group>"; };
+		B4C581C22A706A8800B5AC5D /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		B4C581C42A706B3500B5AC5D /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 				B4C5817C2A702A3500B5AC5D /* MyView2.swift */,
 				B4C581902A702A3700B5AC5D /* Navigation_1.swift */,
 				B4C5818B2A702A3600B5AC5D /* Navigation_2.swift */,
+				B4C581C02A70535E00B5AC5D /* Navigation_3.swift */,
 				B4C581772A702A3500B5AC5D /* NumberedGrid.swift */,
 				B4C581782A702A3500B5AC5D /* NumberedList.swift */,
 				B4C581792A702A3500B5AC5D /* ObservedObject.swift */,
@@ -173,6 +180,8 @@
 				B4C581972A702A3700B5AC5D /* PersonViewModel_3.swift */,
 				B4C581812A702A3500B5AC5D /* PersonViewModel_4.swift */,
 				B4C5818A2A702A3600B5AC5D /* PersonViewModel.swift */,
+				B4C581C22A706A8800B5AC5D /* PeopleViewModel.swift */,
+				B4C581C42A706B3500B5AC5D /* DogsViewModel.swift */,
 				B4C5817B2A702A3500B5AC5D /* Shapes.swift */,
 				B4C581842A702A3600B5AC5D /* Sheets_1.swift */,
 				B4C581962A702A3700B5AC5D /* Sheets_2.swift */,
@@ -309,12 +318,14 @@
 				B4C581A42A702A3700B5AC5D /* Collections_5.swift in Sources */,
 				B4C581AE2A702A3700B5AC5D /* PersonViewModel.swift in Sources */,
 				B4C5819E2A702A3700B5AC5D /* Stacks.swift in Sources */,
+				B4C581C52A706B3500B5AC5D /* DogsViewModel.swift in Sources */,
 				B4C581B82A702A3700B5AC5D /* PersonViewModel_2.swift in Sources */,
 				B4C581A32A702A3700B5AC5D /* MyView.swift in Sources */,
 				B4C5819D2A702A3700B5AC5D /* ObservedObject.swift in Sources */,
 				B4C581B12A702A3700B5AC5D /* CustomViewBuilder.swift in Sources */,
 				B4C581BA2A702A3700B5AC5D /* Sheets_2.swift in Sources */,
 				B4C581A82A702A3700B5AC5D /* Sheets_1.swift in Sources */,
+				B4C581C32A706A8800B5AC5D /* PeopleViewModel.swift in Sources */,
 				B4C581A02A702A3700B5AC5D /* MyView2.swift in Sources */,
 				B4C5819B2A702A3700B5AC5D /* NumberedGrid.swift in Sources */,
 				B4C581A22A702A3700B5AC5D /* Collections_1.swift in Sources */,
@@ -329,6 +340,7 @@
 				B4C581B72A702A3700B5AC5D /* Collections_3.swift in Sources */,
 				B4C581B92A702A3700B5AC5D /* ConditionalView.swift in Sources */,
 				B4C581BD2A702A3700B5AC5D /* StateObject-2.swift in Sources */,
+				B4C581C12A70535E00B5AC5D /* Navigation_3.swift in Sources */,
 				B4C5814D2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift in Sources */,
 				B4C581AB2A702A3700B5AC5D /* Environment.swift in Sources */,
 				B4C581AA2A702A3700B5AC5D /* Combine.swift in Sources */,
