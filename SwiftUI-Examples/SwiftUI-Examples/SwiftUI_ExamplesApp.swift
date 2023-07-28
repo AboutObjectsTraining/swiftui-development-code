@@ -26,9 +26,14 @@ struct Sections: View {
                 Section {
                     NavigationLink("Sheets 1", destination: Sheets_1())
                     NavigationLink("Sheets 2", destination: Sheets_2())
+                    NavigationLink("Menus", destination: Menus())
                 }
                 Section {
+                    // FIXME: Displays dual back buttons.
+                    // Use sheets instead of navigation links.
                     NavigationLink("Navigation 1", destination: Navigation_1())
+                    NavigationLink("Navigation 2", destination: Navigation_2())
+                    NavigationLink("Navigation 3", destination: Navigation_3())
                 }
                 Section {
                     NavigationLink("ConditionalView", destination: ConditionalView())
@@ -63,6 +68,8 @@ struct Sections: View {
 
 struct Sections_Preview: PreviewProvider {
     static var previews: some View {
+        Sections()
+            .preferredColorScheme(.dark)
         Sections()
     }
 }

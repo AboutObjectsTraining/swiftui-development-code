@@ -50,6 +50,7 @@
 		B4C581C12A70535E00B5AC5D /* Navigation_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C02A70535E00B5AC5D /* Navigation_3.swift */; };
 		B4C581C32A706A8800B5AC5D /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C22A706A8800B5AC5D /* PeopleViewModel.swift */; };
 		B4C581C52A706B3500B5AC5D /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C42A706B3500B5AC5D /* DogsViewModel.swift */; };
+		B4C581C72A740E3400B5AC5D /* Menus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C62A740E3400B5AC5D /* Menus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		B4C581C02A70535E00B5AC5D /* Navigation_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation_3.swift; sourceTree = "<group>"; };
 		B4C581C22A706A8800B5AC5D /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		B4C581C42A706B3500B5AC5D /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
+		B4C581C62A740E3400B5AC5D /* Menus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				B4C5817B2A702A3500B5AC5D /* Shapes.swift */,
 				B4C581842A702A3600B5AC5D /* Sheets_1.swift */,
 				B4C581962A702A3700B5AC5D /* Sheets_2.swift */,
+				B4C581C62A740E3400B5AC5D /* Menus.swift */,
 				B4C5817A2A702A3500B5AC5D /* Stacks.swift */,
 				B4C581912A702A3700B5AC5D /* State.swift */,
 				B4C581992A702A3700B5AC5D /* StateObject-2.swift */,
@@ -348,6 +351,7 @@
 				B4C581BB2A702A3700B5AC5D /* PersonViewModel_3.swift in Sources */,
 				B4C5819C2A702A3700B5AC5D /* NumberedList.swift in Sources */,
 				B4C581AC2A702A3700B5AC5D /* EnvironmentObject.swift in Sources */,
+				B4C581C72A740E3400B5AC5D /* Menus.swift in Sources */,
 				B4C581A92A702A3700B5AC5D /* StateObject.swift in Sources */,
 				B4C581B02A702A3700B5AC5D /* Bindings.swift in Sources */,
 				B4C581B52A702A3700B5AC5D /* State.swift in Sources */,
