@@ -8,23 +8,23 @@ struct Sheets_2: View {
     @State private var isEditing = false
     
     var body: some View {
-        Form {
-            VStack {
+        VStack {
+            Form {
                 HStack {
                     Label(viewModel.person.name, systemImage: "person.fill")
                     Spacer()
                     Text("Age: \(viewModel.person.age)")
                 }
             }
+            .sheet(isPresented: $isEditing, onDismiss: update) {
+                PersonForm(viewModel: viewModel, isEditing: $isEditing)
+            }
+            
+            Button(action: show, label: { Text("Show Sheet") })
+                .buttonStyle(.borderedProminent)
         }
-        .sheet(isPresented: $isEditing, onDismiss: update) {
-            PersonForm(viewModel: viewModel, isEditing: $isEditing)
-        }
-        
-        Button(action: show, label: { Text("Show Sheet") })
-            .buttonStyle(.borderedProminent)
     }
-    
+
     func show() {
         isEditing = true
     }
