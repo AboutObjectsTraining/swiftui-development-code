@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4A651AD2C2E1CAC0031D766 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A651AC2C2E1CAC0031D766 /* Observable.swift */; };
 		B4C5814D2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5814C2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift */; };
 		B4C581512A70298C00B5AC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C581502A70298C00B5AC5D /* Assets.xcassets */; };
 		B4C581542A70298C00B5AC5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C581532A70298C00B5AC5D /* Preview Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B4A651AC2C2E1CAC0031D766 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		B4C581492A70298900B5AC5D /* SwiftUI-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C5814C2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExamplesApp.swift; sourceTree = "<group>"; };
 		B4C581502A70298C00B5AC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,8 +168,8 @@
 				B4C581922A702A3700B5AC5D /* EditingText.swift */,
 				B4C581872A702A3600B5AC5D /* Environment.swift */,
 				B4C581882A702A3600B5AC5D /* EnvironmentObject.swift */,
-				B4C581892A702A3600B5AC5D /* Geometry.swift */,
 				B4C581982A702A3700B5AC5D /* Gestures.swift */,
+				B4C581892A702A3600B5AC5D /* Geometry.swift */,
 				B4C5817F2A702A3500B5AC5D /* MyView.swift */,
 				B4C581832A702A3600B5AC5D /* MyView1.swift */,
 				B4C5817C2A702A3500B5AC5D /* MyView2.swift */,
@@ -177,6 +179,7 @@
 				B4C581772A702A3500B5AC5D /* NumberedGrid.swift */,
 				B4C581782A702A3500B5AC5D /* NumberedList.swift */,
 				B4C581792A702A3500B5AC5D /* ObservedObject.swift */,
+				B4A651AC2C2E1CAC0031D766 /* Observable.swift */,
 				B4C5818F2A702A3700B5AC5D /* OpenURLView.swift */,
 				B4C581942A702A3700B5AC5D /* PersonViewModel_2.swift */,
 				B4C581972A702A3700B5AC5D /* PersonViewModel_3.swift */,
@@ -324,6 +327,7 @@
 				B4C581C52A706B3500B5AC5D /* DogsViewModel.swift in Sources */,
 				B4C581B82A702A3700B5AC5D /* PersonViewModel_2.swift in Sources */,
 				B4C581A32A702A3700B5AC5D /* MyView.swift in Sources */,
+				B4A651AD2C2E1CAC0031D766 /* Observable.swift in Sources */,
 				B4C5819D2A702A3700B5AC5D /* ObservedObject.swift in Sources */,
 				B4C581B12A702A3700B5AC5D /* CustomViewBuilder.swift in Sources */,
 				B4C581BA2A702A3700B5AC5D /* Sheets_2.swift in Sources */,
@@ -506,6 +510,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,6 +539,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
