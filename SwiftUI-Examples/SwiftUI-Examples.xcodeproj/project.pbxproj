@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44FDABF2C33266300854296 /* Observable_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44FDABE2C33266300854296 /* Observable_2.swift */; };
 		B4A651AD2C2E1CAC0031D766 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A651AC2C2E1CAC0031D766 /* Observable.swift */; };
 		B4C5814D2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5814C2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift */; };
 		B4C581512A70298C00B5AC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C581502A70298C00B5AC5D /* Assets.xcassets */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B44FDABE2C33266300854296 /* Observable_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable_2.swift; sourceTree = "<group>"; };
 		B4A651AC2C2E1CAC0031D766 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		B4C581492A70298900B5AC5D /* SwiftUI-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C5814C2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExamplesApp.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				B4C581782A702A3500B5AC5D /* NumberedList.swift */,
 				B4C581792A702A3500B5AC5D /* ObservedObject.swift */,
 				B4A651AC2C2E1CAC0031D766 /* Observable.swift */,
+				B44FDABE2C33266300854296 /* Observable_2.swift */,
 				B4C5818F2A702A3700B5AC5D /* OpenURLView.swift */,
 				B4C581942A702A3700B5AC5D /* PersonViewModel_2.swift */,
 				B4C581972A702A3700B5AC5D /* PersonViewModel_3.swift */,
@@ -327,6 +330,7 @@
 				B4C581C52A706B3500B5AC5D /* DogsViewModel.swift in Sources */,
 				B4C581B82A702A3700B5AC5D /* PersonViewModel_2.swift in Sources */,
 				B4C581A32A702A3700B5AC5D /* MyView.swift in Sources */,
+				B44FDABF2C33266300854296 /* Observable_2.swift in Sources */,
 				B4A651AD2C2E1CAC0031D766 /* Observable.swift in Sources */,
 				B4C5819D2A702A3700B5AC5D /* ObservedObject.swift in Sources */,
 				B4C581B12A702A3700B5AC5D /* CustomViewBuilder.swift in Sources */,

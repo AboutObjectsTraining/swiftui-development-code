@@ -1,0 +1,83 @@
+//
+//  Created 7/1/24 by Jonathan Lehr
+//  Copyright © 2024 About Objects.
+//  
+
+import SwiftUI
+import Observation
+
+@Observable class BookListViewModel {
+    let testData = [
+        Book(title: "Book One", author: Author(name: "Fred Smith")),
+        Book(title: "Book Two", author: Author(name: "Jan Jones")),
+        Book(title: "Book Three", author: Author(name: "Bill Yu")),
+    ]
+    // Observed collection type
+    var books: [Book] = []
+    // Observed computed property
+    var count: Int { books.count }
+    
+    init() { books = testData }
+    
+    func append(_ book: Book) {
+        books.append(book)
+    }
+}
+
+struct ObservableBookListContentView: View {
+    let viewModel: BookListViewModel
+    
+    var body: some View {
+        Text("Count: \(viewModel.books.count)")
+        Form {
+            List {
+                ForEach(viewModel.books, id: \.title) { book in
+                    BookCell(book: book)
+                }
+            }
+        }
+        BookListControls(viewModel: viewModel)
+    }
+}
+
+struct BookListControls: View {
+    let viewModel: BookListViewModel
+    
+    var body: some View {
+        HStack {
+            Button("Delete Last Cell") {
+                if !viewModel.books.isEmpty {
+                    viewModel.books.removeLast()
+                }
+            }
+            .disabled(viewModel.books.isEmpty)
+            Spacer()
+            Button("Restore Last Cell") {
+                if viewModel.count < 3 {
+                    viewModel.append(viewModel.testData[viewModel.count])
+                }
+            }
+            .disabled(viewModel.count == 3)
+        }
+        .padding()
+    }
+}
+
+struct BookCell: View {
+    let book: Book
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(book.title)
+                .font(.headline)
+            Text(book.author.name)
+                .font(.subheadline)
+        }
+    }
+}
+
+#Preview {
+    ObservableBookListContentView(viewModel: BookListViewModel())
+}
+
+

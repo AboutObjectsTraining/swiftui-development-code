@@ -57,6 +57,10 @@ struct Sections: View {
                     NavigationLink("Editing Text", destination: EditingTextView())
                 }
                 Section {
+                    NavigationLink("Observable 1", destination: ObservableBookContentView())
+                    NavigationLink("Observable 2", destination: ObservableBookListContentView(viewModel: BookListViewModel()))
+                }
+                Section {
                     NavigationLink("Numbered List", destination: NumberedList())
                     NavigationLink("Numbered Grid", destination: NumberedGrid())
                     NavigationLink("Open URL", destination: OpenURLView())

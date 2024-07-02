@@ -94,8 +94,6 @@ struct SummaryViewTwo: View {
 
 #if DEBUG
 #Preview {
-    Group {
-        ObservableBookContentView()
-    }
+    ObservableBookContentView()
 }
 #endif
