@@ -12,15 +12,26 @@ import Observation
         Book(title: "Book Two", author: Author(name: "Jan Jones")),
         Book(title: "Book Three", author: Author(name: "Bill Yu")),
     ]
-    // Observed collection type
-    var books: [Book] = []
-    // Observed computed property
-    var count: Int { books.count }
     
-    init() { books = testData }
+    // Tracked collection property
+    var books: [Book] = []
+    
+    // Computed properties
+    var count: Int { books.count }
+    var isEmpty: Bool { books.isEmpty }
+    var lastBook: Book { books.last ?? Book() }
+    
+    init() {
+        books = testData
+        UITextField.appearance().clearButtonMode = .always
+    }
     
     func append(_ book: Book) {
         books.append(book)
+    }
+    
+    func removeLastBook() {
+        books.removeLast()
     }
 }
 
@@ -28,8 +39,12 @@ struct ObservableBookListContentView: View {
     let viewModel: BookListViewModel
     
     var body: some View {
-        Text("Count: \(viewModel.books.count)")
+        Text("Count: \(viewModel.count)")
+            .font(.subheadline)
         Form {
+            Section {
+                TextInputView(book: viewModel.lastBook)
+            }
             List {
                 ForEach(viewModel.books, id: \.title) { book in
                     BookCell(book: book)
@@ -46,15 +61,17 @@ struct BookListControls: View {
     var body: some View {
         HStack {
             Button("Delete Last Cell") {
-                if !viewModel.books.isEmpty {
-                    viewModel.books.removeLast()
+                if !viewModel.isEmpty {
+                    viewModel.removeLastBook()
                 }
             }
-            .disabled(viewModel.books.isEmpty)
+            .disabled(viewModel.isEmpty)
             Spacer()
             Button("Restore Last Cell") {
                 if viewModel.count < 3 {
-                    viewModel.append(viewModel.testData[viewModel.count])
+                    viewModel.append(
+                        viewModel.testData[viewModel.count]
+                    )
                 }
             }
             .disabled(viewModel.count == 3)
@@ -79,5 +96,3 @@ struct BookCell: View {
 #Preview {
     ObservableBookListContentView(viewModel: BookListViewModel())
 }
-
-
