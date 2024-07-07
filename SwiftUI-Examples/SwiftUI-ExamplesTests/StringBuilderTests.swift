@@ -10,7 +10,7 @@ import XCTest
     }
 }
 
-class PropertyBuilderTests: XCTestCase {
+class StringBuilderTests: XCTestCase {
     
     @StringBuilder var message: String {
         "Hello"
@@ -32,7 +32,7 @@ struct StringGroup {
     }
 }
 
-extension PropertyBuilderTests {
+extension StringBuilderTests {
     
     func testStringBuilder() {
         let group = StringGroup {

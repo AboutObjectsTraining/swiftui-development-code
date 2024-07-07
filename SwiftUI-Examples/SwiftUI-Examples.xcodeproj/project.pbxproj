@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44E6A352C3B46EE002A4A28 /* AsyncAwaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E6A342C3B46EE002A4A28 /* AsyncAwaitTests.swift */; };
+		B44E6A372C3B5118002A4A28 /* ActorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E6A362C3B5118002A4A28 /* ActorTests.swift */; };
+		B44E6A392C3B517F002A4A28 /* QuoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E6A382C3B517F002A4A28 /* QuoteTests.swift */; };
+		B44E6A3B2C3B51B0002A4A28 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E6A3A2C3B51B0002A4A28 /* Quote.swift */; };
 		B44FDABF2C33266300854296 /* Observable_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44FDABE2C33266300854296 /* Observable_2.swift */; };
 		B4A651AD2C2E1CAC0031D766 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A651AC2C2E1CAC0031D766 /* Observable.swift */; };
 		B4C5814D2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5814C2A70298900B5AC5D /* SwiftUI_ExamplesApp.swift */; };
@@ -48,7 +52,7 @@
 		B4C581BB2A702A3700B5AC5D /* PersonViewModel_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581972A702A3700B5AC5D /* PersonViewModel_3.swift */; };
 		B4C581BC2A702A3700B5AC5D /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581982A702A3700B5AC5D /* Gestures.swift */; };
 		B4C581BD2A702A3700B5AC5D /* StateObject-2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581992A702A3700B5AC5D /* StateObject-2.swift */; };
-		B4C581BF2A702F5A00B5AC5D /* PropertyBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581BE2A702F5A00B5AC5D /* PropertyBuilderTests.swift */; };
+		B4C581BF2A702F5A00B5AC5D /* StringBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581BE2A702F5A00B5AC5D /* StringBuilderTests.swift */; };
 		B4C581C12A70535E00B5AC5D /* Navigation_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C02A70535E00B5AC5D /* Navigation_3.swift */; };
 		B4C581C32A706A8800B5AC5D /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C22A706A8800B5AC5D /* PeopleViewModel.swift */; };
 		B4C581C52A706B3500B5AC5D /* DogsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C581C42A706B3500B5AC5D /* DogsViewModel.swift */; };
@@ -66,6 +70,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B44E6A342C3B46EE002A4A28 /* AsyncAwaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitTests.swift; sourceTree = "<group>"; };
+		B44E6A362C3B5118002A4A28 /* ActorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActorTests.swift; sourceTree = "<group>"; };
+		B44E6A382C3B517F002A4A28 /* QuoteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteTests.swift; sourceTree = "<group>"; };
+		B44E6A3A2C3B51B0002A4A28 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		B44FDABE2C33266300854296 /* Observable_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable_2.swift; sourceTree = "<group>"; };
 		B4A651AC2C2E1CAC0031D766 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		B4C581492A70298900B5AC5D /* SwiftUI-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +117,7 @@
 		B4C581972A702A3700B5AC5D /* PersonViewModel_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewModel_3.swift; sourceTree = "<group>"; };
 		B4C581982A702A3700B5AC5D /* Gestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		B4C581992A702A3700B5AC5D /* StateObject-2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StateObject-2.swift"; sourceTree = "<group>"; };
-		B4C581BE2A702F5A00B5AC5D /* PropertyBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyBuilderTests.swift; sourceTree = "<group>"; };
+		B4C581BE2A702F5A00B5AC5D /* StringBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringBuilderTests.swift; sourceTree = "<group>"; };
 		B4C581C02A70535E00B5AC5D /* Navigation_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation_3.swift; sourceTree = "<group>"; };
 		B4C581C22A706A8800B5AC5D /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		B4C581C42A706B3500B5AC5D /* DogsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsViewModel.swift; sourceTree = "<group>"; };
@@ -215,7 +223,11 @@
 		B4C5815C2A70298C00B5AC5D /* SwiftUI-ExamplesTests */ = {
 			isa = PBXGroup;
 			children = (
-				B4C581BE2A702F5A00B5AC5D /* PropertyBuilderTests.swift */,
+				B4C581BE2A702F5A00B5AC5D /* StringBuilderTests.swift */,
+				B44E6A342C3B46EE002A4A28 /* AsyncAwaitTests.swift */,
+				B44E6A362C3B5118002A4A28 /* ActorTests.swift */,
+				B44E6A3A2C3B51B0002A4A28 /* Quote.swift */,
+				B44E6A382C3B517F002A4A28 /* QuoteTests.swift */,
 			);
 			path = "SwiftUI-ExamplesTests";
 			sourceTree = "<group>";
@@ -370,7 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C581BF2A702F5A00B5AC5D /* PropertyBuilderTests.swift in Sources */,
+				B44E6A392C3B517F002A4A28 /* QuoteTests.swift in Sources */,
+				B4C581BF2A702F5A00B5AC5D /* StringBuilderTests.swift in Sources */,
+				B44E6A352C3B46EE002A4A28 /* AsyncAwaitTests.swift in Sources */,
+				B44E6A3B2C3B51B0002A4A28 /* Quote.swift in Sources */,
+				B44E6A372C3B5118002A4A28 /* ActorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -507,6 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Examples/Preview Content\"";
+				DEVELOPMENT_TEAM = QJJFB4XBRT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -536,6 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Examples/Preview Content\"";
+				DEVELOPMENT_TEAM = QJJFB4XBRT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -564,8 +582,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJJFB4XBRT;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aboutobjects.training.SwiftUI-ExamplesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,8 +602,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QJJFB4XBRT;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aboutobjects.training.SwiftUI-ExamplesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
