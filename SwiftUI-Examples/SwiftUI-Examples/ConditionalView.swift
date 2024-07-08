@@ -27,7 +27,7 @@ struct ConditionalView: View {
             Spacer()
         }
         .symbolRenderingMode(.multicolor)
-        .font(.system(size: 24))
+        .font(.title2)
     }
     
     func toggleWeather() {

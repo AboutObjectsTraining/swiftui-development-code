@@ -9,7 +9,7 @@ final class PersonViewModel_4: ObservableObject {
     
     private var subscriptions: Set<AnyCancellable> = []
     
-    init() {
+    init() {        
         $person
             .sink { person in
                 print(person.name)

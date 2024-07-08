@@ -12,6 +12,7 @@ struct HelloView: View {
             Button(action: toggle,
                    label: { Text("Toggle") })
         }
+        .font(.largeTitle)
     }
     
     func toggle() {

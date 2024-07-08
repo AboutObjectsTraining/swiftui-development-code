@@ -23,7 +23,7 @@ struct Navigation_2: View {
                 ToolbarItem {
                     EditButton()
                 }
-                ToolbarItem(placement: .navigationBarLeading) {
+                ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {}, label: { Image(systemName: "plus.circle") })
                 }
             }

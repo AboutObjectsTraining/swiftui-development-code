@@ -4,15 +4,14 @@
 import SwiftUI
 
 struct Geometry: View {
+    
     var body: some View {
-        HStack {
-            GeometryReader { geometry in
-                let width = geometry.size.width / 2
-                let height = geometry.size.height / 2
-                Color.blue
-                    .frame(width: width, height: height)
-                    .position(x: width, y: height)
-            }
+        GeometryReader { geometry in
+            let width = geometry.size.width / 2
+            let height = geometry.size.height / 2
+            Color.blue
+                .frame(width: width, height: height)
+                .position(x: width, y: height)
         }
         .frame(width: 180, height: 80, alignment: .center)
         .background(.yellow)
@@ -22,5 +21,9 @@ struct Geometry: View {
 struct Geometry_Previews: PreviewProvider {
     static var previews: some View {
         Geometry()
+        Geometry()
+            .previewDevice("iPad mini (6th generation)")
+            .previewDisplayName("iPad")
+        
     }
 }

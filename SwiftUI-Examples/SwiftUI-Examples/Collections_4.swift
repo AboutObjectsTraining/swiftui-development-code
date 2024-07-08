@@ -18,10 +18,11 @@ struct Collections_4: View {
 }
 
 struct Collections_4_1: View {
+    
     @State private var selections: Set<UUID> = []
         
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List(contacts, selection: $selections) { contact in
                 Text(contact.name)
             }

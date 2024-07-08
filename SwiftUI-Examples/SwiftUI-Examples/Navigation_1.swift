@@ -10,10 +10,12 @@ struct Navigation_1: View {
         NavigationStack {
             List(viewModel.people, id: \.name) { person in
                 ZStack(alignment: .leading) {
+                    
                     HStack {
                         Image(systemName: "person")
                         Text(person.name)
                     }
+                    
                     NavigationLink("") {
                         Form {
                             Text("Name: \(person.name)")

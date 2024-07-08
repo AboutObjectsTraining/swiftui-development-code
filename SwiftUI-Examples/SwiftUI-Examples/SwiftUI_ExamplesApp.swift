@@ -65,6 +65,11 @@ struct Sections: View {
                     NavigationLink("Numbered Grid", destination: NumberedGrid())
                     NavigationLink("Open URL", destination: OpenURLView())
                 }
+                Section {
+                    NavigationLink("Combine", destination: Combine())
+                    NavigationLink("Combine 2", destination: PersonEditingView_2())
+                    
+                }
             }
         }
     }

@@ -29,20 +29,11 @@ struct WeatherViews: View {
     }
 }
 
-//struct WeatherViews: View {
-//    var body: some View {
-//        VStack(spacing: 8) {
-//            Cell(imageName: "sunrise.fill", time: "6:15 AM")
-//            Cell(imageName: "sunset.fill", time: "5:30 PM")
-//        }
-//        .font(.system(size: 36))
-//    }
-//}
-
 struct FancyWeatherView: View {
     var body: some View {
         ZStack {
-            Color.yellow
+            Color
+                .yellow
                 .opacity(0.3)
                 .cornerRadius(25)
                 .frame(maxWidth: 260, maxHeight: 300)
@@ -56,18 +47,6 @@ struct FancyWeatherView: View {
     }
 }
 
-//struct Cell: View {
-//    let imageName: String
-//    let time: String
-//
-//    var body: some View {
-//        HStack(spacing: 18) {
-//            Image(systemName: imageName)
-//            Text(time)
-//        }
-//    }
-//}
-
 struct WeatherCell: View {
     let imageName: String
     let time: String
@@ -77,14 +56,13 @@ struct WeatherCell: View {
             Group {
                 Image(systemName: imageName)
                     // Multicolor system image, where applicable
-                    .renderingMode(.original)
+                    .symbolRenderingMode(.multicolor)
                     .frame(width: 32)
                     .padding(12.0)
                     .background(Color.blue)
                 Text(time)
                     .fontWeight(.light)
                     .frame(width: 120, alignment: .leading)
-                    .lineLimit(4)
             }
         }
         .font(.system(size: 20))
@@ -98,9 +76,5 @@ struct Stacks_Previews: PreviewProvider {
         WeatherView()
         WeatherViews()
         FancyWeatherView()
-            
-            
-            
-        
     }
 }

@@ -49,9 +49,7 @@ struct ColorDescription: View {
 
 struct Collections_1_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            Collections_1()
-            Collections_1_1()
-        }
+        Collections_1()
+        Collections_1_1()
     }
 }

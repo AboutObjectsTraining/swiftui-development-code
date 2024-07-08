@@ -68,7 +68,13 @@ struct PersonView_4: View {
 }
 
 struct EnvironmentObject_Previews: PreviewProvider {
+    static let viewModel = {
+        PersonViewModel()
+    }()
+    
     static var previews: some View {
         EnvironmentObjectView()
+        PersonView_3()
+            .environmentObject(viewModel)
     }
 }
