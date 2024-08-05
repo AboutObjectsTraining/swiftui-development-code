@@ -86,8 +86,7 @@ struct ThumbnailView: View {
             Image(uiImage: image)
                 .onAppear {
                     Task {
-                        self.image = try? await self.viewModel
-                            .fetchThumbnail(for: "X")
+                        self.image = try? await self.viewModel.fetchThumbnail(for: "X")
                     }
                 }
         }

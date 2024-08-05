@@ -11,7 +11,7 @@ struct Navigation_2: View {
             List {
                 ForEach(viewModel.people, id: \.name) { person in
                     NavigationLink(person.name) {
-                        PersonCell(person: person)
+                        PersonDetail(person: person)
                     }
                 }
                 .onDelete { indexSet in
@@ -23,8 +23,9 @@ struct Navigation_2: View {
                 ToolbarItem {
                     EditButton()
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItemGroup(placement: .navigationBarLeading) {
                     Button(action: {}, label: { Image(systemName: "plus.circle") })
+                    Button(action: { }, label: { Text("Foo") })
                 }
             }
         }
@@ -40,7 +41,7 @@ struct Navigation_2: View {
     }
 }
 
-struct PersonCell: View {
+struct PersonDetail: View {
     let person: Person
     
     var body: some View {

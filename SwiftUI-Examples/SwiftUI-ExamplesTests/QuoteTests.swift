@@ -9,7 +9,8 @@ let url = URL(string: "https://api.coinbase.com/v2/prices/spot")!
 class QuoteTests: XCTestCase {
     
     var quote: BitcoinQuote?
-    
+    let decoder = JSONDecoder()
+
     // Compare this Combine-based implementation to the
     // async/await version further below.
     func testFetchQuotesWithCombine() {
@@ -19,6 +20,7 @@ class QuoteTests: XCTestCase {
         URLSession.shared.dataTaskPublisher(for: url)
             .map { data, response in data }
             .decode(type: BitcoinQuote.self, decoder: JSONDecoder())
+            .receive(on: RunLoop.main)
             .sink { completion in
                 print(completion)
             } receiveValue: { [weak self] quote in
@@ -34,13 +36,11 @@ class QuoteTests: XCTestCase {
     }
     
     // Async-await version of the Combine-based unit test.
-    func testFetchQuotesWithAsyncAwait() async throws {
-        let decoder = JSONDecoder()
-        let url = URL(string: "https://api.coinbase.com/v2/prices/spot")!
+    @MainActor func testFetchQuotesWithAsyncAwait() async throws {
         let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
-        let quote = try? decoder.decode(BitcoinQuote.self, from: data)
+        quote = try decoder.decode(BitcoinQuote.self, from: data)
         
-        print(quote?.formattedAmount ?? "")
+        print(quote?.formattedAmount ?? "nil")
         XCTAssertNotNil(quote)
     }
 }

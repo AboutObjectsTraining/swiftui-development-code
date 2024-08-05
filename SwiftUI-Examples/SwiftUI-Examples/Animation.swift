@@ -17,8 +17,7 @@ struct AnimateAllTheThings: View {
                 .background(isRotating ? .pink : .purple)
                 .opacity(isRotating ? 0.5 : 1.0)
             // Animatable geometry effects
-            //                .transformEffect(CGAffineTransform(translationX: 0, y: isRotating ? 100 : 0))
-                .offset(isRotating ? CGSize(width: 0, height: 100) : CGSize(width: 0, height: 0))
+                .offset(CGSize(width: 0, height: 100))
                 .scaleEffect(isRotating ? CGSize(width: 1.5, height: 1.5) : CGSize(width: 1, height: 1))
                 .rotationEffect(Angle(degrees: isRotating ? 400 : 0))
             // Implicit animation configuration

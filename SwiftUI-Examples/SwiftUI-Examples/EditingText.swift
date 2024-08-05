@@ -62,5 +62,7 @@ struct TextEditingView: View {
 struct EditingText_Previews: PreviewProvider {
     static var previews: some View {
         EditingTextView()
+        EditablePersonView()
+            .environmentObject(PersonViewModel_2())
     }
 }
